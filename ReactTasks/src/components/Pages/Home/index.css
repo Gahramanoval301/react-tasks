@@ -1,0 +1,15 @@
+.home{
+    margin:2rem 2.5rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.kedyPhotos{
+    display: flex;
+    flex-flow: row wrap;
+}
+img{
+    width: 100%;
+    min-height: 500px;
+}

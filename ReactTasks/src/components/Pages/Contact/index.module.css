@@ -1,0 +1,17 @@
+.contact{
+        margin:2rem 2.5rem;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+        padding: 20px;    
+}
+.contacts{
+    border: 5px solid darkred;
+    box-shadow: 0 0 10px rgba(156, 40, 40, 0.491);
+    height: 70px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
