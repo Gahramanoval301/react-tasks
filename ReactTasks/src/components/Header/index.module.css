@@ -1,0 +1,11 @@
+.heading{
+    height: 10vw;
+    background-color: brown;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.727);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    padding: 20px;
+}
