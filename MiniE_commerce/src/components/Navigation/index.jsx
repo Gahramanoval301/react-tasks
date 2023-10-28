@@ -1,9 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-
 const NavigationLink = ({to, title}) => {
     return (
-        <NavLink to={to} style={({isActive})=>({color: isActive ? 'red' : ''})}>{title}</NavLink>
+        <li style={{color:'black'}}>
+            <NavLink to={to} style={({isActive})=>({color: isActive ? 'blue' : ''})}>{title}</NavLink>
+        </li>
     )
 }
 
