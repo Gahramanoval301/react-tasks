@@ -7,11 +7,11 @@ export const ModeContext = createContext(false)
 const ModeContextProvider = ({ children }) => {
     const [isDarkMode, setIsDarkMode] = useState(JSON.parse(localStorage.getItem('isDark')))
 
-    useEffect(()=>{
+    useEffect(() => {
         localStorage.setItem('isDark', JSON.stringify(isDarkMode))
-    },[isDarkMode])
+    }, [isDarkMode])
 
-    const modeToggler = ()=>{
+    const modeToggler = () => {
         setIsDarkMode(!isDarkMode)
     }
     return (
