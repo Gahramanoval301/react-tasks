@@ -1,9 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-const NavigationLink = ({to, title}) => {
+const NavigationLink = ({ to, title }) => {
     return (
-        <li style={{color:'black'}}>
-            <NavLink to={to} style={({isActive})=>({color: isActive ? 'blue' : ''})}>{title}</NavLink>
+        <li style={{ color: 'black' }}>
+            <NavLink to={to} style={({ isActive }) => ({ color: isActive ? 'blue' : '' })}>{title}</NavLink>
         </li>
     )
 }
@@ -17,6 +17,14 @@ const Navigation = () => {
         </>
     )
 }
-
+export const NavigationProducts = () => {
+    return (
+        <>
+            {/* <NavigationLink to='/' title='Home' /> */}
+            <NavigationLink to='/products/groceries' title='Groceries' />
+            {/* <NavigationLink to='/cart' title='Cart' /> */}
+        </>
+    )
+}
 
 export default Navigation

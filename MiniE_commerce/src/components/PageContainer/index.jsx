@@ -7,6 +7,14 @@ const PageContainer = ({ children }) => {
     return (
         <div className={styles.container}>
             <Header />
+            <ul className='caterogyList'>
+                    <li>smarthpones</li>
+                    <li>laptops</li>
+                    <li>fragrances</li>
+                    <li>skincare</li>
+                    <li>groceries</li>
+                    <li>home-decoration</li>
+                </ul>
             {children}
             <Footer />
         </div>
