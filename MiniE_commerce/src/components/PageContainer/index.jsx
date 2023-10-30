@@ -1,21 +1,22 @@
 import React from 'react'
 import Header from '../Header'
 import Footer from '../Footer'
-import styles from './index.module.css'
+import './index.css'
+import { NavigationProducts } from '../Navigation'
 
 const PageContainer = ({ children }) => {
     return (
-        <div className={styles.container}>
+        <div className='container'>
             <Header />
-            <ul className='caterogyList'>
-                    <li>smarthpones</li>
-                    <li>laptops</li>
-                    <li>fragrances</li>
-                    <li>skincare</li>
-                    <li>groceries</li>
-                    <li>home-decoration</li>
+            <div className='categories'>
+                <h3>Our Products</h3>
+                <ul className='categoryList'>
+                   <NavigationProducts/>
                 </ul>
-            {children}
+            </div>
+            <div className='productCards'>
+                {children}
+            </div>
             <Footer />
         </div>
     )

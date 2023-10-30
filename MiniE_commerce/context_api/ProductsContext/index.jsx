@@ -5,7 +5,9 @@ export const ProductsContext = createContext([])
 const ProductsContextProvider = ({ children }) => {
     const [products, setProducts] = useState([])
     useEffect(() => {
-        fetch(url).then(res => res.json()).then(({products}) => setProducts(products))
+        fetch(url).then(res => res.json()).then(({products}) => {
+            console.log(products);
+            setProducts(products)})
     }, [])
     return (
         <ProductsContext.Provider value={[products, setProducts]}>
