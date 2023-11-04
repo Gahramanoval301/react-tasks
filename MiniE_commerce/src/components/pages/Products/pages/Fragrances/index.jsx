@@ -6,7 +6,7 @@ const Fragrances = () => {
   const [products, setProducts] = useContext(ProductsContext)
   return (
     <PageContainer>
-      {products.slice(10, 15).map(({ id, rating, title, description, price, thumbnail }) => {
+      {products.map(({ id, rating, title, description, price, thumbnail }) => {
         return (
           <div key={id} className='productCard'>
             <img className='productPhoto' src={thumbnail} alt="thumbnail" />

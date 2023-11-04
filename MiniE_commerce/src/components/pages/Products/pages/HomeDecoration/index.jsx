@@ -3,10 +3,9 @@ import { ProductsContext } from '../../../../../../context_api/ProductsContext'
 import PageContainer from '../../../../PageContainer'
 
 const HomeDecoration = () => {
-  const [products, setProducts] = useContext(ProductsContext)
   return (
     <PageContainer>
-      {products.slice(25).map(({ id, rating, title, description, price, thumbnail }) => {
+      {products.map(({ id, rating, title, description, price, thumbnail }) => {
         return (
           <div key={id} className='productCard'>
             <img className='productPhoto' src={thumbnail} alt="thumbnail" />

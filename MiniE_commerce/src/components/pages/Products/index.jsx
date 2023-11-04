@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useReducer } from 'react'
 import PageContainer from '../../PageContainer'
 import { ProductsContext } from '../../../../context_api/ProductsContext'
 import { NavigationProducts } from '../../Navigation'
-import reducerProducts, { acitions, getProducts } from './reducer'
+import reducerProducts, { acitions } from './reducer'
 import axios from 'axios'
 const url = 'https://dummyjson.com/products'
 
@@ -13,10 +13,9 @@ const Products = () => {
   useEffect(() => {
     axios.get(url).then(({ data }) => dispatch({
       type: acitions.get_products,
-      payload: data
+      payload: data.products
     }))
   }, [])
-  console.log(state.products);
   return (
     <PageContainer>
       <div className='caterogies'>

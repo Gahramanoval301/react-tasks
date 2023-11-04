@@ -22,7 +22,7 @@ export const NavigationProducts = () => {
         <>
             {/* <NavigationLink to='/' title='Home' /> */}
             <NavigationLink to='/products/groceries' title='Groceries' />
-            <NavigationLink to='/products/homedecorations' title='HomeDecorations'/>
+            <NavigationLink to='/products/home-decoration' title='HomeDecorations'/>
             <NavigationLink to='/products/skincare' title='Skincare'/>
             <NavigationLink to='/products/fragrances' title='Fragrances'/>
             <NavigationLink to='/products/smartphones' title='Smartphones'/>
