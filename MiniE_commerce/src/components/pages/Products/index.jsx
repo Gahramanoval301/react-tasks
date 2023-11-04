@@ -1,18 +1,27 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useReducer } from 'react'
 import PageContainer from '../../PageContainer'
 import { ProductsContext } from '../../../../context_api/ProductsContext'
 import { NavigationProducts } from '../../Navigation'
-
+import reducerProducts, { acitions, getProducts } from './reducer'
+import axios from 'axios'
+const url = 'https://dummyjson.com/products'
 
 
 const Products = () => {
-    const [products, setProducts] = useContext(ProductsContext)
+  const [state, dispatch] = useReducer(reducerProducts, [])
 
-    return (
-        <PageContainer>
-            <div className='caterogies'>
-            </div>
-            {products.map(({ id, rating, title, description, price, thumbnail }) => {
+  useEffect(() => {
+    axios.get(url).then(({ data }) => dispatch({
+      type: acitions.get_products,
+      payload: data
+    }))
+  }, [])
+  console.log(state.products);
+  return (
+    <PageContainer>
+      <div className='caterogies'>
+      </div>
+      {state.map(({ id, rating, title, description, price, thumbnail }) => {
         return (
           <div key={id} className='productCard'>
             <img className='productPhoto' src={thumbnail} alt="thumbnail" />
@@ -31,8 +40,8 @@ const Products = () => {
           </div>
         )
       })}
-        </PageContainer>
-    )
+    </PageContainer>
+  )
 }
 
 export default Products
