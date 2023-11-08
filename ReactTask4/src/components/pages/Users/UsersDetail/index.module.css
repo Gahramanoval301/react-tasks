@@ -1,0 +1,16 @@
+.userCard{
+    width: 40vw;
+    border: 2px solid navy;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.24);
+    padding: 0.5rem 1rem;
+    margin:2.5rem auto;
+    text-align: center;
+}
+.userCard *{
+    color:navy;
+}
+.userCard .section *{
+    color:hotpink; 
+    font-family: cursive;
+}

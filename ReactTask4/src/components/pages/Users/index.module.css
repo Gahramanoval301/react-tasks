@@ -1,0 +1,42 @@
+.usersCards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 1rem;
+}
+.usersCards .userCard {
+  border: 2px solid navy;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.24);
+  padding: 0.5rem 1rem;
+}
+.usersCards .userCard .userImage {
+  width: 100%;
+  max-height: 300px;
+}
+.usersCards .userCard .userAbout {
+  font-weight: 700;
+}
+.usersCards .userCard .userAbout * {
+  color: rgb(220, 17, 118);
+  font-weight: 400;
+  font-family: cursive;
+}
+.usersCards .userCard .userMoreInfo{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.usersCards .userCard .userMoreInfo span{
+    cursor: pointer;
+    color: navy;
+}
+.usersCards .userCard .userCity {
+  color: gray;
+}
+.usersCards .userCard .userCity img {
+  position: relative;
+  top: 10px;
+}
+
