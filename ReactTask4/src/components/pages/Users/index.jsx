@@ -1,8 +1,11 @@
 import React from 'react'
+import PageContainer from '../../PageContainer'
 
 const Users = () => {
   return (
-    <div>Users</div>
+    <PageContainer>
+      <div>Users</div>
+    </PageContainer>
   )
 }
 

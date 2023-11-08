@@ -7,8 +7,8 @@ import Users from '../pages/Users'
 const WebRouting = () => {
     return (
         <Routes>
-            <Route path='/home' element={<Home/>} />
             <Route path='/' element={<Home/>} />
+            <Route path='/home' element={<Home/>} />
             <Route path='/users' element={<Users/>} />
             <Route path='/posts' element={<Posts/>} />
             <Route path='*' element={<div>Redd ol burdan!</div>} />
