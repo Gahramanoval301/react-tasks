@@ -1,0 +1,61 @@
+.posts {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem;
+}
+.postCard {
+  width: 80%;
+  border: 2px solid navy;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.24);
+  padding: 1rem 2rem 2rem 2rem;
+}
+.postCard .ownerCard {
+  margin: -2rem 0 -1rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.5rem;
+}
+.postCard .ownerCard p {
+  cursor: pointer;
+}
+.postCard .ownerCard p:nth-child(1) {
+  color: rgb(182, 6, 94);
+}
+.postCard .ownerCard p:nth-child(2) {
+  color: navy;
+  text-decoration: underline;
+}
+.postCard .infoCard button{
+    margin-right: 1rem;
+    background-color: navy;
+    color: hotpink;
+}
+.postCard .infoCard button:nth-child(2):hover{
+    color: red;
+}
+.postCard .infoCard button:hover{
+    background-color: rgba(0, 0, 128, 0.92);
+}
+
+@media screen and (max-width: 800px) {
+  .postCard {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 436px) {
+  
+  .postCard .ownerCard p:nth-child(1) {
+    margin: 10px 0 0 0;
+  }
+  .postCard .ownerCard p:nth-child(2) {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 350px) {
+    .posts{
+        font-size:80% ;
+    }
+}
