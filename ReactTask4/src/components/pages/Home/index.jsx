@@ -4,7 +4,7 @@ import PageContainer from '../../PageContainer'
 const Home = () => {
     return (
         <PageContainer>
-            <div>Home</div>
+            <h1 style={{ textAlign: 'center' }}>Welcome To Home!</h1>
         </PageContainer>
     )
 }
