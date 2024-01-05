@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import PageContainer from '../../PageContainer'
-import { get_posts, get_comments } from '../../../reduxRTK/slices/PostsSlice'
+import { get_posts, get_comments, increase_reaction } from '../../../reduxRTK/slices/PostsSlice'
 import { useSelector, useDispatch } from 'react-redux'
 import axios from 'axios'
 import styles from './index.module.css'
@@ -14,7 +14,7 @@ const Posts = () => {
   const dispatch = useDispatch()
   const posts = useSelector((state) => state.posts.value)
   const comments = useSelector((state) => state.posts.comments)
-  
+
   //* get datas from endpoint-backend with API
   useEffect(() => {
     axios.get(url1).then(({ data }) => { dispatch(get_posts(data.posts)) })
@@ -55,8 +55,8 @@ const Posts = () => {
                 </div>
                 <p>{body}</p>
                 <div className={styles.infoCard}>
-                  <button><Link style={{color:'hotpink'}} to={`/posts/${userId}`}>read comments</Link></button>
-                  <button>❤: {reactions}</button>
+                  <button><Link style={{ color: 'hotpink' }} to={`/posts/${userId}`}>read comments</Link></button>
+                  <button onClick={() => dispatch(increase_reaction(2))}>❤: {reactions}</button>
                 </div>
               </div>
             )
