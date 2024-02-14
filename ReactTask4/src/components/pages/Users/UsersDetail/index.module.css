@@ -1,16 +1,45 @@
-.userCard{
-    width: 40vw;
-    border: 2px solid navy;
-    border-radius: 1rem;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.24);
-    padding: 0.5rem 1rem;
-    margin:2.5rem auto;
-    text-align: center;
+.userCard {
+  width: 40%;
+  border: 2px solid navy;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.24);
+  padding: 0.5rem 1rem;
+  margin: 2.5rem auto;
+  text-align: center;
 }
-.userCard *{
-    color:navy;
+.userCard * {
+  color: navy;
 }
-.userCard .section *{
-    color:hotpink; 
-    font-family: cursive;
+.userCard .section * {
+  color: hotpink;
+  font-family: cursive;
+}
+@media screen and (max-width: 996px) {
+  .userCard {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .userCard {
+    width: 90%;
+  }
+
+  .userCard h1{
+    font-size: 2rem;
+  }
+  .userCard img{
+    width: 80%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .userCard {
+    width: 80%;
+  }
+
+  .userCard h1{
+    font-size: 2rem;
+  }
+  .userCard img{
+    width: 80%;
+  }
 }
