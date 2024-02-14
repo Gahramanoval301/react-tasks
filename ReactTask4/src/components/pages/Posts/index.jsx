@@ -53,7 +53,7 @@ const Posts = () => {
                   }
                   <p>{`#${tags[0]} #${tags[1]} #${tags[2]} `}</p>
                 </div>
-                <p>{body}</p>
+                <p className={styles.content}>{body}</p>
                 <div className={styles.infoCard}>
                   <button><Link style={{ color: 'hotpink' }} to={`/posts/${userId}`}>read comments</Link></button>
                   <button onClick={() => dispatch(increase_reaction(2))}>❤: {reactions}</button>

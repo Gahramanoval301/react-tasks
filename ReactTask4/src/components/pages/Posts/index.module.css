@@ -40,6 +40,9 @@
     background-color: rgba(0, 0, 128, 0.92);
 }
 
+.postCard .content{
+  color: rgb(13, 13, 25);
+}
 @media screen and (max-width: 800px) {
   .postCard {
     width: 100%;
