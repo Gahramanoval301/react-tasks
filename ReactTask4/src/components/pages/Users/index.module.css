@@ -17,6 +17,7 @@
 }
 .usersCards .userCard .userAbout {
   font-weight: 700;
+  color: navy;
 }
 .usersCards .userCard .userAbout * {
   color: rgb(220, 17, 118);
