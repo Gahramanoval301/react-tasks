@@ -1,3 +1,6 @@
+.commentsContainer{
+    padding: 1rem;
+}
 .commentsContainer h2{
     color: navy;
 }
