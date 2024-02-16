@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import PageContainer from '../../../PageContainer'
 import { useParams } from 'react-router'
-import { get_single_comments } from '../../../../reduxRTK/slices/PostsSlice'
+import { get_single_comments } from '../../../slices/Postsslice/index.jsx'
 import { useSelector, useDispatch } from 'react-redux'
 import axios from 'axios'
 import styles from './index.module.css'
