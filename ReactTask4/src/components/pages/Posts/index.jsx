@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import PageContainer from '../../PageContainer'
-import { get_posts, get_comments, increase_reaction } from '../../../reduxRTK/slices/PostsSlice'
+import { get_posts, get_comments, increase_reaction } from '../../slices/Postsslice/index.jsx'
 import { useSelector, useDispatch } from 'react-redux'
 import axios from 'axios'
 import styles from './index.module.css'
