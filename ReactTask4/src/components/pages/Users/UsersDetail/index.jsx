@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import PageContainer from '../../../PageContainer'
 import { useParams } from 'react-router'
-import { get_user } from '../../../../reduxRTK/slices/UsersSlice'
+import { get_user } from '../../../slices/UsersSlice/index.jsx'
 import { useDispatch, useSelector } from 'react-redux'
 import styles from './index.module.css'
 
